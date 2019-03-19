@@ -5,11 +5,6 @@ function init(){
   var tracker = $('.tracker');
   var volume = $('.volume');
 
-   var popupNotification = $("#popupNotification").kendoNotification().data("kendoNotification");
-  $("#showPopupNotification").click(function(){             
-		popupNotification.show("item added");
-   });
-
   function initAudio(elem) {
     var url = elem.attr('audiourl');
 
