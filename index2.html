@@ -1,0 +1,65 @@
+<!Doctype html>
+ <html>
+    <head> 
+        <title>Music Player</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+	    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	    crossorigin="anonymous">
+	    </script>
+             <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.common.min.css">
+          <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.rtl.min.css">
+          <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.default.min.css">
+          <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.mobile.all.min.css">
+      
+          <script src="https://kendo.cdn.telerik.com/2019.1.220/js/kendo.all.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/player.css"/>
+    </head>
+    <body>
+		<div class="player">
+		   <div class="clearfix"></div>
+
+		  <div class="trackDetails ">
+		    <span class="artist"></span>
+		    <span class="splitTxt"> - </span>
+		    <span class="title"></span>
+		  </div>
+
+		  <div class="controls">
+		    <div class="rew">
+		      <i class="icons ion-ios-skipbackward"></i>
+		    </div>
+		    <div id="showPopupNotification" class="play">
+		      <i class="icons ion-ios-play"></i>
+		    </div>
+		    <div class="pause">
+		      <i class="icons ion-ios-pause"></i>
+		    </div>
+
+		    <div class="fwd">
+		      <i class="icons ion-ios-skipforward"></i>
+		    </div>
+		  </div>
+
+		  <div class="volumeIcon">
+		    <i class="icons ion-android-volume-up"></i>
+		    <div class="volume"></div>
+		  </div>
+
+		  <div class="tracker"></div>
+		</div>
+
+		<ul class="playlist" id="playlist">
+		  <li audioURL="https://res.cloudinary.com/daintu6ky/video/upload/v1553018255/A_Chase.mp3" artist="Artist 1">Track 1</li>
+		  <li audioURL="https://res.cloudinary.com/daintu6ky/video/upload/v1553018255/A_Chase.mp3" artist="Artist 2">Track 2</li>
+		  <li audioURL="http://picdn.net/shutterstock/audio/397292/preview/preview.mp3https://res.cloudinary.com/daintu6ky/video/upload/v1553018255/A_Chase.mp3" artist="Artist 3">Track 3</li>
+		  <li audioURL="https://res.cloudinary.com/daintu6ky/video/upload/v1553018255/A_Chase.mp3" artist="Artist 4">Track 4</li>
+		</ul>
+        <span id="popupNotification"></span>
+
+	   
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+	    <script src="js/player.js"></script>
+    </body>
+</html>
